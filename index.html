@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vendas de Pizza</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <h1>Comunidade Boa Esperança</h1>
+            </li>
+            <li>
+                <h2>Vendas de Pizza</h2>
+            </li>
+        </ul>
+    </header>
+
+    <section>
+        <form action="">
+            <h3>Selecione a pizza que foi vendida</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="pizza" id="mussarela">
+                    <label for="mussarela">Mussarela</label>
+                </li>
+                <li>
+                    <input type="radio" name="pizza" id="mista">
+                    <label for="mista">Mista</label>
+                </li>
+                <li>
+                    <input type="radio" name="pizza" id="calabresa">
+                    <label for="calabresa">Calabresa</label>
+                </li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="vendas">Vendas</button>
+        <button id="estorno">Estorno</button>
+    </section>
+
+    <section id="tabela">
+        <table>
+            <tr>
+                <th>Sabores</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td>
+                <td id="resultado-mussarela"></td>
+                <td id="venda-mussarela"></td>
+            </tr>
+            <tr>
+                <td>Mista</td>
+                <td id="resultado-mista"></td>
+                <td id="venda-mista"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td>
+                <td id="resultado-calabresa"></td>
+                <td id="venda-calabresa"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+
+    <script src="scripts/tableToExcel.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
